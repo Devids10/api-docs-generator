@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Outputs a static build to the /out folder
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static exports
+    unoptimized: true,
   },
+  basePath: '/api-docs-generator',
+  assetPrefix: '/api-docs-generator/',
 };
 
 export default nextConfig;
